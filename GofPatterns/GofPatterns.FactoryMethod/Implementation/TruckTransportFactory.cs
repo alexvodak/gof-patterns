@@ -2,10 +2,6 @@
 
 namespace GofPatterns.FactoryMethod.Implementation;
 
-public class TruckTransportFactory : AbstractTransportFactory
+public class TruckTransportFactory : AbstractTransportFactoryGeneric<Delivery, TruckTransport>
 {
-    protected override ITransport CreateTransport()
-    {
-        return new TruckTransport();
-    }
 }

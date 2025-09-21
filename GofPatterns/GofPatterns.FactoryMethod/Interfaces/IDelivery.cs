@@ -2,5 +2,5 @@
 
 public interface IDelivery
 {
-    string Name { get; }
+    string Name { get; set; }
 }

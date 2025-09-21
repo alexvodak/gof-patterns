@@ -2,10 +2,6 @@
 
 namespace GofPatterns.FactoryMethod.Implementation;
 
-public class SeaTransportFactory : AbstractTransportFactory
+public class SeaTransportFactory : AbstractTransportFactoryGeneric<Delivery, SeaTransport>
 {
-    protected override ITransport CreateTransport()
-    {
-        return new SeaTransport();
-    }
 }
