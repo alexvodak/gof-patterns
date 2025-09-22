@@ -7,7 +7,16 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-        IFurnitureAbstractFactory furnitureAbstractFactory = new ModernFurnitureFactory(new FurnitureFactory());
+        var furnitureFactory = new FurnitureFactory();
+        IFurnitureAbstractFactory modernFurnitureFactory = new ModernFurnitureFactory(furnitureFactory);
+        await ProcessFactory(modernFurnitureFactory);
+        IFurnitureAbstractFactory victorianFurnitureFactory = new VictorianFurnitureFactory(furnitureFactory);
+        await ProcessFactory(victorianFurnitureFactory);
+        Console.ReadKey();
+    }
+
+    private static async Task ProcessFactory(IFurnitureAbstractFactory furnitureAbstractFactory)
+    {
         ICollection<IFurniture> furnitures = new List<IFurniture>();
         var sofa = await furnitureAbstractFactory.CreateSofaAsync();
         furnitures.Add(sofa);
@@ -19,6 +28,5 @@ internal class Program
         {
             Console.WriteLine("furniture {0} style is {1}", furniture.Name, furniture.Style);
         }
-        Console.ReadKey();
     }
 }
