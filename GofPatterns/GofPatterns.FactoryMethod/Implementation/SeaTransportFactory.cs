@@ -2,6 +2,6 @@
 
 namespace GofPatterns.FactoryMethod.Implementation;
 
-public class SeaTransportFactory : AbstractTransportFactoryGeneric<Delivery, SeaTransport>
+public class SeaTransportFactory : BaseTransportFactoryGeneric<Delivery, SeaTransport>
 {
 }

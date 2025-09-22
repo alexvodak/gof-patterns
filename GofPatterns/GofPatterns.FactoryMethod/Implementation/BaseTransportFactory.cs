@@ -2,22 +2,17 @@
 
 namespace GofPatterns.FactoryMethod.Implementation;
 
-public abstract class AbstractTransportFactoryGeneric<TDelivery, TTransport> : ITransportFactory
-    where TDelivery : IDelivery, new()
-    where TTransport : ITransport, new()
+public abstract class BaseTransportFactory : ITransportFactory
 {
     protected virtual IDelivery CreateDelivery()
     {
-        return new TDelivery
+        return new Delivery
         {
             Name = Guid.NewGuid().ToString(),
         };
     }
 
-    protected virtual ITransport CreateTransport()
-    {
-        return new TTransport();
-    }
+    protected abstract ITransport CreateTransport();
 
     public async Task FactoryWorkAsync()
     {

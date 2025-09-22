@@ -2,6 +2,6 @@
 
 namespace GofPatterns.FactoryMethod.Implementation;
 
-public class TruckTransportFactory : AbstractTransportFactoryGeneric<Delivery, TruckTransport>
+public class TruckTransportFactory : BaseTransportFactoryGeneric<Delivery, TruckTransport>
 {
 }
