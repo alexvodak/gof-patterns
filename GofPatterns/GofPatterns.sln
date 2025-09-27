@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30 d17.14
+VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GofPatterns.FactoryMethod", "GofPatterns.FactoryMethod\GofPatterns.FactoryMethod.csproj", "{11775243-1C55-41E2-8500-A555DAA1E557}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GofPatterns.AbstractFactory", "GofPatterns.AbstractFactory\GofPatterns.AbstractFactory.csproj", "{877A56D7-25B2-47B0-BB01-1D2FC88DC8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GofPatterns.Builder", "GofPatterns.Builder\GofPatterns.Builder.csproj", "{D610D7AB-FEE4-4890-BFB4-044FC623587E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{877A56D7-25B2-47B0-BB01-1D2FC88DC8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877A56D7-25B2-47B0-BB01-1D2FC88DC8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877A56D7-25B2-47B0-BB01-1D2FC88DC8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D610D7AB-FEE4-4890-BFB4-044FC623587E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D610D7AB-FEE4-4890-BFB4-044FC623587E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D610D7AB-FEE4-4890-BFB4-044FC623587E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D610D7AB-FEE4-4890-BFB4-044FC623587E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
